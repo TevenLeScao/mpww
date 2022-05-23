@@ -25,4 +25,4 @@ while len(matches) != len(passages):
 
 passages_with_matches = Dataset.from_dict({"title": passages["title"], "text": passages["text"], "mpww_match": matches})
 passages_with_matches.to_csv(f"{folder}/passages_with_matches_filtered.csv")
-passages_with_matches.push_to_hub("teven/teven/mpww_filtered_all_passages")
+passages_with_matches.push_to_hub("teven/mpww_filtered_all_passages")
